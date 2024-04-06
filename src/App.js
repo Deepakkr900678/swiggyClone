@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import HoverFunction from "./components/navbar/HoverFunction";
+import Main from './components/main/Main';
+import Scrolling from "./components/main/functions/Scrolling";
+import NavbarSwitch from './components/main/functions/NavbarSwitch';
 
 function App() {
+  useEffect(()=>{
+    HoverFunction()
+    Scrolling()
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavbarSwitch/>
+      <Main/>
+    </>
   );
 }
 

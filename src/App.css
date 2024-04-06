@@ -1,7 +1,23 @@
 .App {
   text-align: center;
 }
+@font-face {
+  font-family:Basis Grotesque;
+  src: url(./fonts/BasisGrotesqueArabicPro-Medium.ttf);
+}
+@font-face {
+  font-family:Basis Grotesque b;
+  src: url(./fonts/BasisGrotesqueArabicPro-Black.ttf);
+}
+@font-face {
+  font-family:Basis Grotesque l;
+  src: url(./fonts/BasisGrotesqueArabicPro-Regular.ttf);
+}
 
+@font-face {
+  font-family: ProximaNovaCond-Black;
+  src: url(./fonts/FontsFree-Net-Proxima-Nova-Cond-Black.otf);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
